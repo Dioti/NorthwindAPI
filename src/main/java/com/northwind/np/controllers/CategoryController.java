@@ -13,9 +13,9 @@ import java.util.List;
 @RestController
 public class CategoryController {
 
-    @Autowired
     private CategoryService categoryService;
 
+    @Autowired
     public CategoryService getCategoryService() {
         return categoryService;
     }
