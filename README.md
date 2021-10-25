@@ -93,7 +93,7 @@ The program implements several features, including:
 
 ---
 
-### Future Work:
+### Future Work
 
 - [x] Unit testing using Mockito
 - [ ] Build documentation using Swagger UI
@@ -101,7 +101,7 @@ The program implements several features, including:
 
 ---
 
-### License:
+### License
 
 This project is covered by the MIT license, as found [here](LICENSE) or below:
 > MIT License
