@@ -4,6 +4,7 @@ import com.northwind.np.dto.EmployeeDTO;
 import com.northwind.np.services.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -24,9 +25,9 @@ public class EmployeeController {
         return employeeService.getAllEmployeeDTO();
     }
 
-    @GetMapping(value="/northwind/employees", params={"employeeId"})
-    public List<EmployeeDTO> getEmployeesByEmployeeId(@RequestParam Integer employeeId) {
-        return employeeService.getEmployeesById(employeeId);
+    @GetMapping("/northwind/employees/{id}")
+    public List<EmployeeDTO> getEmployeesByEmployeeId(@PathVariable Integer id) {
+        return employeeService.getEmployeesById(id);
     }
 
     @GetMapping(value="/northwind/employees", params={"firstName"})

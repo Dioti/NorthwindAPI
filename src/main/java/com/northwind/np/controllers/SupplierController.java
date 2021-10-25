@@ -29,7 +29,7 @@ public class SupplierController {
         else return null;
     }
 
-    @GetMapping("northwind/supplier")
+    @GetMapping("/northwind/supplier")
     public List<SupplierDTO> sortSuppliersByRegionCountryCity(
             @RequestParam String country, @RequestParam(required = false) String city,
             @RequestParam(required = false) String postCode) {

@@ -20,7 +20,7 @@ public class CustomerController {
         this.customerService = customerService;
     }
 
-    @GetMapping(value="/northwind/customers")
+    @GetMapping("/northwind/customers")
     public List<CustomerDTO> getAllCustomers(@RequestParam String name, @RequestParam(required = false) String title,
                                              @RequestParam(required = false) String region,
                                              @RequestParam(required=false) String country) {
