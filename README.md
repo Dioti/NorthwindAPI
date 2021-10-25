@@ -45,7 +45,7 @@ The program implements several features, including:
   - `/all` - fetches all customers
   - `/{id}` - fetches customer by id
 
-### Employees
+#### Employees
 - endpoint: `/northwind/employees` - fetches all employees
 - query parameters:
   - `firstName=Andrew` (optional) - fetches all employees whose first name matches the specified name
@@ -57,7 +57,7 @@ The program implements several features, including:
 - paths:
   - `/id` - fetches employee by id
 
-### Orders
+#### Orders
 - endpoint: `/northwind/orders`
 - query parameters: 
   - `customerId=1` (optional) - fetches all orders made by the specified customer
@@ -68,20 +68,20 @@ The program implements several features, including:
   - `/location` - fetches all orders made from the specified location
   - `/date` - fetches all orders made using the specified date
 
-### Products
+#### Products
 - endpoint: `/northwind/products` - fetches all products
 - query parameters:
 - paths:
   - `/available` - fetches all products that are both in-stock and not discontinued
   - `/unavailable` - fetches all products that are both out-of-stock and discontinued
 
-### Shippers
+#### Shippers
 - endpoint: `/northwind/shippers` - fetches all shippers
 - query parameters:
 - paths:
   - `/shipperId` - fetches shipper with the specified id
 
-### Suppliers
+#### Suppliers
 - endpoint: `/northwind/suppliers` - fetches all suppliers
 - query parameters:
   - `country=USA` - fetches all suppliers located in the specified country
@@ -95,5 +95,6 @@ The program implements several features, including:
 
 ### To-Do:
 
-[ ] Build documentation using Swagger UI
-[x] Unit testing using Mockito
+- [x] Unit testing using Mockito
+- [ ] Build documentation using Swagger UI
+- [ ] Rewrite controller methods and add more DTOs
