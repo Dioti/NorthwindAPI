@@ -9,7 +9,7 @@ An API for the Northwind database that returns the content in a JSON format. Bui
 Before running the application, ensure the following: 
 - You must have a copy of the Northwinds database running on a mySQL server (v8.0.22+). If you don't have a copy, you will need to download it [here](src/main/resources/Northwind.MySQL5.sql).
 - Clone the repository: `https://github.com/Dioti/NorthwindAPI.git`
-- Edit the `application.properties` file with your appropriate database login details
+- Edit the `application.properties` file located in `src/main/resources` with your appropriate database login details
 - Ensure that you have set up the `northwinds` database as a database and are successfully connected to it
 
 ---
