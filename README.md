@@ -21,6 +21,7 @@ The program implements several features, including:
 - RESTful approach
 - DTO design pattern
 - Multiple endpoints using path variables and query parameters
+- Unit testing using Mockito
 
 ---
 
@@ -36,20 +37,25 @@ The program implements several features, including:
 #### Customers:
 - endpoint: `northwind/customers`
 - query parameters:
-- `name=Ann` - fetches all customers whose name contains the specified name
-- (optional) `title=Mr.` - fetches all customers with the specified title
-- (optional) `region=BC` - fetchhes all customers located in the specified region
-- (optional) `country=Spain` - fetches all customers located in the specified country
+  - `name=Ann` - fetches all customers whose name contains the specified name
+  - `title=Mr.` (optional) - fetches all customers with the specified title
+  - `region=BC` (optional) - fetchhes all customers located in the specified region
+  - `country=Spain` (optional) - fetches all customers located in the specified country
 - paths:
-- `/all` - fetches all customers
-- `/{id}` - fetches customer by id
+  - `/all` - fetches all customers
+  - `/{id}` - fetches customer by id
 
 ### Employees
 - endpoint: `northwind/employees` - fetches all employees
 - query parameters:
-- 
+  - `firstName=Andrew` (optional) - fetches all employees whose first name matches the specified name
+  - `lastName=Fuller` (optional) - fetches all employees whose last name matches the specified name
+  - `firstName=Andrew&lastName=Fuller` (optional) - fetches all employees whose full name matches the specified names
+  - `country=Spain` (optional) - fetches all employees who live in the specified country
+  - `firstName=Andrew&country=USA` (optional) - fetches all employees whose first name matches the specified name and who lives in the specified country
+  - `lastName=Fuller&country=USA` (optional) - fetches all employees whose last name matches the specified name and who lives in the specified country
 - paths:
-- 
+- `/id` - fetches employee by id
 
 ### Orders
 - endpoint:
